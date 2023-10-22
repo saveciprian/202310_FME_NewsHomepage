@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="app/dist/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+<body>
+  <div id="top"></div>
+
+
+
+  <header class="main-header">
+    <nav class="desktop" id="navDesktop">
+      <div class="navbarBackground"></div>
+      <div class="navbarContent">
+        <a href="#top"><img src="assets/images/logo.svg" alt="" class="logo"></a>
+        <div class="links">
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#top">New</a></li>
+            <li><a href="#top">Popular</a></li>
+            <li><a href="#attribution">Trending</a></li>
+            <li><a href="#attribution">Categories</a></li>
+          </ul>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="slidingMenu" id="slidingMenu">
+      <div id="mobileOverlay"></div>  
+      <div class="expanded" id="navMobile">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#top">New</a></li>
+          <li><a href="#top">Popular</a></li>
+          <li><a href="#attribution">Trending</a></li>
+          <li><a href="#attribution">Categories</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="mobile" id="navMobile">
+      <div class="navbarContent">
+        <a href="#top"><img src="assets/images/logo.svg" alt="" class="logo"></a>
+        <div class="burger" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+    </nav>
+      
+
+    <section class="hero">
+      <div class="hero__left">
+        <div class="hero-image"></div>
+        <div class="header-text">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <p class="button">READ MORE</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="hero__right">
+        <h1 class="new">New</h1>
+        <div class="article">
+          <h1>Hydrogen VS Electric Cars</h1>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="article">
+          <h1>The Downsides of AI Artistry</h1>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="article">
+          <h1>Is VC Funding Drying Up?</h1>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h1 class="card-number">01</h1>
+          <h2>Reviving Retro PCs</h2>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h1 class="card-number">02</h1>
+          <h2>Top 10 Laptops of 2022</h2>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h1 class="card-number">03</h1>
+          <h2>The Growth of Gaming</h2>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+    <div class="attribution" id="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      <span>Coded by <a href="https://www.instagram.com/saveciprian/" target="_blank">Tudor Săvescu</a>.</span>
+    </div>
+  </header>
+
+  <script src="app/js/script.js"></script>
+</body>
+</html>

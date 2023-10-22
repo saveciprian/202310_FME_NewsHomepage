@@ -1,0 +1,256 @@
+body{
+    background-color: $colorAlmostWhite;
+}
+
+nav{
+    position: sticky;
+    // padding-inline: 10%;
+    left: 0;
+    right:0;
+    top: 2.5rem;
+
+
+    .navbarContent{
+        // position: relative;
+        // margin-top: 5.625rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarBackground{
+        position: absolute;
+        top:0;
+        height:5rem;
+        left:0;
+        right:0;
+        background-color: $colorAlmostWhite;
+        transform: translateY(-20px) scaleX(110%);
+        z-index: -1;
+
+
+        // opacity: 60%;
+    }
+
+
+
+    .logo{
+        width: 65px;
+    }
+
+    li{
+        display: inline;
+        font-size: $fontSizeBody;
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $colorGunmental;
+    transition: color 0.3s;
+
+    &:hover{
+        color: $colorLightVermillion;
+    }
+}
+
+.slidingMenu{
+    display: none;
+}
+
+.main-header{
+    width: 80%;
+    margin-inline: auto;
+    padding-top:7rem;
+}
+
+.hero
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 3rem;
+    gap: 1.875rem;
+
+    &-image{
+        width: 100%;
+        aspect-ratio: 21/9;
+        // height: 250px;
+        background-image: url(../../assets/images/image-web-3-desktop.jpg);
+        background-size: cover;
+    }
+
+    
+    .header-text{
+        margin-top: 1.875rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+
+
+        h1{
+            font-size: 3.75rem;
+            font-weight: $fwBold;
+            color: $colorDarkSpaceBlue;
+        }
+    }
+
+    p{
+        font-size: $fontSizeBody;
+        color: $colorGunmental;
+        line-height: 1.625rem;
+        
+    }
+
+    .button{
+        display: inline-block;
+        letter-spacing: 0.3rem;
+        font-size: 0.875rem;
+        font-weight: $fwBold;
+        margin-top: 1.875rem;   
+        background-color: $colorLightVermillion;
+        color: $colorAlmostWhite;
+        padding: 0.8125rem 2rem;
+        transition: background-color 0.3s;
+
+        &:hover{
+            background-color: $colorDarkSpaceBlue;
+        }
+    }
+    
+
+    &__right{
+        width: 100%;
+        height: 100%;
+        background-color: $colorDarkSpaceBlue;
+
+        .new{
+            width: 80%;
+            margin: auto;
+            margin-top: 3rem;
+            font-size: 2.5rem;
+            font-weight: $fwBold;
+            color: $colorYellow;
+        }
+    }
+
+    
+
+    .article{
+        margin-inline: auto;
+        width: 80%;
+        padding-block: 2rem;
+        cursor: pointer;
+
+        h1{
+            font-size: $fontSizeArticleHeader;
+            font-weight: $fwBold;
+            color: $colorAlmostWhite;
+            margin-bottom: 0.8em;
+        }
+
+        p{
+            color: $colorSilver;
+        }
+
+        &:hover h1{
+            color: $colorYellow;
+        }
+
+        &:not(:last-child){
+            border-bottom: 1px solid #5E607A;
+        }
+    }
+
+}
+
+p{
+    line-height: 1.3rem;
+}
+
+.cards{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+
+    .card{
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+
+        &:hover{
+
+            h2{
+                color: $colorLightVermillion;
+
+            }
+        }
+
+        .card-image{
+            flex-shrink: 0;
+            height: 100%;
+            width: 100px;  
+        }
+
+        &:nth-child(1) .card-image{
+            background-image: url(../../assets/images/image-retro-pcs.jpg);
+            background-size: cover;  
+            background-position: center center;
+        }
+
+        &:nth-child(2) .card-image{
+            background-image: url(../../assets/images/image-top-laptops.jpg);
+            background-size: cover;  
+            background-position: center center;
+        }
+
+        &:nth-child(3) .card-image{
+            background-image: url(../../assets/images/image-gaming-growth.jpg);
+            background-size: cover;  
+            background-position: center center;
+        }
+
+        h1{
+            color:$colorSilver;
+            font-size: 2rem;
+            font-weight: $fwBold;
+            margin-bottom: 0.75rem;
+        }
+
+        h2{
+            font-size: 1.125rem;
+            font-weight: $fwBold;
+            color: $colorDarkSpaceBlue;
+            margin-bottom: 0.5625rem;
+
+
+        }
+
+        p{
+            font-size: $fontSizeBody;
+            color: $colorGunmental;
+            line-height: 173%;
+        }
+    }
+}
+
+.attribution{
+    font-size: .8rem;
+    margin-bottom: 30px;
+    color: $colorGunmental;
+
+    a{
+        font-weight: $fwBold;
+        color: inherit;
+        text-decoration: none;
+
+        &:hover{
+            color: $colorLightVermillion;
+        }
+    }
+}
